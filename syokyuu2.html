@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>自己紹介カード</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-50 py-8">
+
+<main class="max-w-4xl mx-auto px-4">
+
+<h1 class="text-2xl font-bold text-gray-900 mb-6 text-center">チームメンバー</h1> <!-- カードを横3枚並びにする。スマホでは縦1列 -->
+
+<div class="flex flex-col md:flex-row gap-6">
+
+
+
+<div class="bg-white rounded-lg shadow p-6 flex flex-col items-center">
+
+<span class="text-4xl">🎸</span>
+
+<h2 class="text-lg font-bold text-gray-900 mt-3">田中 凛</h2>
+
+<p class="text-gray-600 text-sm mt-2 text-center">フロントエンドを担当。React好き。</p>
+
+</div>
+
+
+
+<div class="bg-white rounded-lg shadow p-6 flex flex-col items-center">
+
+<span class="text-4xl">💻</span>
+
+<h2 class="text-lg font-bold text-gray-900 mt-3">佐藤 海</h2>
+
+<p class="text-gray-600 text-sm mt-2 text-center">バックエンドを担当。DBが得意。</p>
+
+</div>
+
+
+
+<div class="bg-white rounded-lg shadow p-6 flex flex-col items-center">
+
+<span class="text-4xl">🎨</span>
+
+<h2 class="text-lg font-bold text-gray-900 mt-3">山本 蒼</h2>
+
+<p class="text-gray-600 text-sm mt-2 text-center">デザイン担当。Figma使い。</p>
+
+</div>
+
+
+
+</div>
+
+</main>
+
+
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS 練習問題 - Q1</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    pre {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+  </style>
+</head>
+<body class="bg-[#f0f4f8] text-gray-800 py-10 px-4 min-h-screen">
+  <main class="max-w-4xl mx-auto space-y-8">
+    
+    <!-- ヘッダー -->
+    <div>
+      <p class="text-indigo-600 text-sm font-semibold tracking-wide">Tailwind CSS 練習問題</p>
+      <h1 class="text-3xl font-extrabold text-gray-900 mt-1">flex / flex-col の理解チェック (Q1)</h1>
+      <p class="text-gray-600 mt-2">下のコードを読んで、Live Server (Go Live) で表示される画面を予想して①〜⑤から選んでください。</p>
+    </div>
+
+    <!-- サンプルコード -->
+    <section>
+      <h2 class="text-xl font-bold text-gray-900 mb-3">サンプルコード</h2>
+      <div class="bg-[#0f172a] text-slate-200 p-6 rounded-xl shadow-lg overflow-x-auto text-sm leading-relaxed">
+        <pre><code class="text-slate-300">&lt;!DOCTYPE html&gt;
+&lt;html lang="ja"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;自己紹介カード&lt;/title&gt;
+    &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body class="bg-gray-50 py-8"&gt;
+    &lt;main class="max-w-4xl mx-auto px-4"&gt;
+      &lt;h1 class="text-2xl font-bold text-gray-900 mb-6 text-center"&gt;チームメンバー&lt;/h1&gt;
+
+      <!-- カードを横3枚並びにする。スマホでは縦1列 -->
+      <div class="flex flex-col md:flex-row gap-6">
+
+        &lt;div class="bg-white rounded-lg shadow p-6 flex flex-col items-center"&gt;
+          &lt;span class="text-4xl"&gt;🎸&lt;/span&gt;
+          &lt;h2 class="text-lg font-bold text-gray-900 mt-3"&gt;田中 凛&lt;/h2&gt;
+          &lt;p class="text-gray-600 text-sm mt-2 text-center"&gt;フロントエンドを担当。React好き。&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="bg-white rounded-lg shadow p-6 flex flex-col items-center"&gt;
+          &lt;span class="text-4xl"&gt;💻&lt;/span&gt;
+          &lt;h2 class="text-lg font-bold text-gray-900 mt-3"&gt;佐藤 海&lt;/h2&gt;
+          &lt;p class="text-gray-600 text-sm mt-2 text-center"&gt;バックエンドを担当。DBが得意。&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="bg-white rounded-lg shadow p-6 flex flex-col items-center"&gt;
+          &lt;span class="text-4xl"&gt;🎨&lt;/span&gt;
+          &lt;h2 class="text-lg font-bold text-gray-900 mt-3"&gt;山本 蒼&lt;/h2&gt;
+          &lt;p class="text-gray-600 text-sm mt-2 text-center"&gt;デザイン担当。Figma使い。&lt;/p&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </div>
+    </section>
+
+    <!-- 問題 -->
+    <section>
+      <h2 class="text-xl font-bold text-gray-900 mb-3">問題</h2>
+      <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 space-y-3">
+        <div class="flex items-start gap-3">
+          <span class="bg-blue-600 text-white font-bold text-sm px-2.5 py-1 rounded-md shrink-0 mt-0.5">Q1</span>
+          <p class="text-gray-800 text-lg font-medium leading-snug">
+            このHTMLファイルをLive Serverで開き、<strong class="font-bold text-gray-900">画面幅375px(スマートフォンサイズ)</strong>で表示したとき、どの画面(①〜⑤)になるでしょう？
+          </p>
+        </div>
+        <p class="text-gray-500 text-sm bg-blue-50/60 p-3 rounded-lg border border-blue-100/80">
+          <span class="font-semibold text-blue-700">ヒント:</span> 外側の `flex flex-col md:flex-row` と、各カード内側の `flex flex-col items-center` の両方の意味を考えましょう。
+        </p>
+      </div>
+    </section>
+
+    <!-- 選択肢 (1〜5) -->
+    <section>
+      <h2 class="text-xl font-bold text-gray-900 mb-3">選択肢（1〜5）</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        
+    <div class="bg-white rounded-xl p-4 border border-gray-200 shadow-sm flex flex-col justify-between hover:border-blue-400 transition">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="w-6 h-6 rounded-full bg-blue-600 text-white font-bold text-xs flex items-center justify-center shrink-0">1</span>
+        <span class="text-xs font-bold text-gray-800 leading-tight">① 縦に3枚、カード内は縦並び・中央揃え</span>
+      </div>
+      <div class="mt-2 border border-slate-200 rounded-lg overflow-hidden">
+        
+    <div class="flex flex-col gap-3 p-2 bg-slate-100 rounded-lg">
+      <div class="bg-white rounded p-3 flex flex-col items-center border shadow-sm">
+        <span class="text-xl">🎸</span>
+        <h3 class="text-xs font-bold mt-1">田中 凛</h3>
+        <p class="text-[10px] text-gray-500 text-center mt-1">フロントエンドを担当。React好き。</p>
+      </div>
+      <div class="bg-white rounded p-3 flex flex-col items-center border shadow-sm">
+        <span class="text-xl">💻</span>
+        <h3 class="text-xs font-bold mt-1">佐藤 海</h3>
+        <p class="text-[10px] text-gray-500 text-center mt-1">バックエンドを担当。DBが得意。</p>
+      </div>
+      <div class="bg-white rounded p-3 flex flex-col items-center border shadow-sm">
+        <span class="text-xl">🎨</span>
+        <h3 class="text-xs font-bold mt-1">山本 蒼</h3>
+        <p class="text-[10px] text-gray-500 text-center mt-1">デザイン担当。Figma使い。</p>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+    
+    <div class="bg-white rounded-xl p-4 border border-gray-200 shadow-sm flex flex-col justify-between hover:border-blue-400 transition">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="w-6 h-6 rounded-full bg-blue-600 text-white font-bold text-xs flex items-center justify-center shrink-0">2</span>
+        <span class="text-xs font-bold text-gray-800 leading-tight">② 横に3枚並ぶ</span>
+      </div>
+      <div class="mt-2 border border-slate-200 rounded-lg overflow-hidden">
+        
+    <div class="flex flex-row gap-2 p-2 bg-slate-100 rounded-lg overflow-x-auto">
+      <div class="flex-1 min-w-[80px] bg-white rounded p-2 flex flex-col items-center border shadow-sm">
+        <span class="text-lg">🎸</span>
+        <h3 class="text-[10px] font-bold mt-1">田中 凛</h3>
+        <p class="text-[8px] text-gray-500 text-center mt-0.5">フロント</p>
+      </div>
+      <div class="flex-1 min-w-[80px] bg-white rounded p-2 flex flex-col items-center border shadow-sm">
+        <span class="text-lg">💻</span>
+        <h3 class="text-[10px] font-bold mt-1">佐藤 海</h3>
+        <p class="text-[8px] text-gray-500 text-center mt-0.5">バック</p>
+      </div>
+      <div class="flex-1 min-w-[80px] bg-white rounded p-2 flex flex-col items-center border shadow-sm">
+        <span class="text-lg">🎨</span>
+        <h3 class="text-[10px] font-bold mt-1">山本 蒼</h3>
+        <p class="text-[8px] text-gray-500 text-center mt-0.5">デザイン</p>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+    
+    <div class="bg-white rounded-xl p-4 border border-gray-200 shadow-sm flex flex-col justify-between hover:border-blue-400 transition">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="w-6 h-6 rounded-full bg-blue-600 text-white font-bold text-xs flex items-center justify-center shrink-0">3</span>
+        <span class="text-xs font-bold text-gray-800 leading-tight">③ 縦に3枚、カード内は左寄せ</span>
+      </div>
+      <div class="mt-2 border border-slate-200 rounded-lg overflow-hidden">
+        
+    <div class="flex flex-col gap-3 p-2 bg-slate-100 rounded-lg">
+      <div class="bg-white rounded p-3 flex flex-col items-start border shadow-sm">
+        <span class="text-xl">🎸</span>
+        <h3 class="text-xs font-bold mt-1">田中 凛</h3>
+        <p class="text-[10px] text-gray-500 mt-1">フロントエンドを担当。React好き。</p>
+      </div>
+      <div class="bg-white rounded p-3 flex flex-col items-start border shadow-sm">
+        <span class="text-xl">💻</span>
+        <h3 class="text-xs font-bold mt-1">佐藤 海</h3>
+        <p class="text-[10px] text-gray-500 mt-1">バックエンドを担当。DBが得意。</p>
+      </div>
+      <div class="bg-white rounded p-3 flex flex-col items-start border shadow-sm">
+        <span class="text-xl">🎨</span>
+        <h3 class="text-xs font-bold mt-1">山本 蒼</h3>
+        <p class="text-[10px] text-gray-500 mt-1">デザイン担当。Figma使い。</p>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+    
+    <div class="bg-white rounded-xl p-4 border border-gray-200 shadow-sm flex flex-col justify-between hover:border-blue-400 transition">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="w-6 h-6 rounded-full bg-blue-600 text-white font-bold text-xs flex items-center justify-center shrink-0">4</span>
+        <span class="text-xs font-bold text-gray-800 leading-tight">④ 縦に3枚、カード内は横並び</span>
+      </div>
+      <div class="mt-2 border border-slate-200 rounded-lg overflow-hidden">
+        
+    <div class="flex flex-col gap-3 p-2 bg-slate-100 rounded-lg">
+      <div class="bg-white rounded p-3 flex flex-row items-center gap-3 border shadow-sm">
+        <span class="text-2xl">🎸</span>
+        <div>
+          <h3 class="text-xs font-bold">田中 凛</h3>
+          <p class="text-[10px] text-gray-500">フロントエンドを担当。React好き。</p>
+        </div>
+      </div>
+      <div class="bg-white rounded p-3 flex flex-row items-center gap-3 border shadow-sm">
+        <span class="text-2xl">💻</span>
+        <div>
+          <h3 class="text-xs font-bold">佐藤 海</h3>
+          <p class="text-[10px] text-gray-500">バックエンドを担当。DBが得意。</p>
+        </div>
+      </div>
+      <div class="bg-white rounded p-3 flex flex-row items-center gap-3 border shadow-sm">
+        <span class="text-2xl">🎨</span>
+        <div>
+          <h3 class="text-xs font-bold">山本 蒼</h3>
+          <p class="text-[10px] text-gray-500">デザイン担当。Figma使い。</p>
+        </div>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+    
+    <div class="bg-white rounded-xl p-4 border border-gray-200 shadow-sm flex flex-col justify-between hover:border-blue-400 transition">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="w-6 h-6 rounded-full bg-blue-600 text-white font-bold text-xs flex items-center justify-center shrink-0">5</span>
+        <span class="text-xs font-bold text-gray-800 leading-tight">⑤ 標準ブロック配置 (レイアウト指定なし)</span>
+      </div>
+      <div class="mt-2 border border-slate-200 rounded-lg overflow-hidden">
+        
+    <div class="block p-2 bg-slate-100 rounded-lg space-y-3">
+      <div class="bg-white rounded p-3 border shadow-sm">
+        <span class="text-xl block">🎸</span>
+        <h3 class="text-xs font-bold mt-1">田中 凛</h3>
+        <p class="text-[10px] text-gray-500 mt-1">フロントエンドを担当。React好き。</p>
+      </div>
+      <div class="bg-white rounded p-3 border shadow-sm">
+        <span class="text-xl block">💻</span>
+        <h3 class="text-xs font-bold mt-1">佐藤 海</h3>
+        <p class="text-[10px] text-gray-500 mt-1">バックエンドを担当。DBが得意。</p>
+      </div>
+      <div class="bg-white rounded p-3 border shadow-sm">
+        <span class="text-xl block">🎨</span>
+        <h3 class="text-xs font-bold mt-1">山本 蒼</h3>
+        <p class="text-[10px] text-gray-500 mt-1">デザイン担当。Figma使い。</p>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+    
+      </div>
+    </section>
+
+    <!-- 回答・解説 -->
+    <section>
+      <h2 class="text-xl font-bold text-gray-900 mb-3">回答</h2>
+      <details class="bg-emerald-50/80 border border-emerald-200 rounded-xl overflow-hidden group">
+        <summary class="p-4 cursor-pointer font-bold text-emerald-800 flex items-center gap-2 hover:bg-emerald-100/50 transition">
+          <span class="text-emerald-600 group-open:rotate-90 transition-transform">▶</span>
+          解答と解説を見る
+        </summary>
+        <div class="p-6 bg-white border-t border-emerald-100 text-gray-800 space-y-3 leading-relaxed">
+          <p class="text-lg font-bold text-emerald-700">正解: 【1】</p>
+          <div class="text-sm space-y-2 text-gray-700">
+            <p>画面幅375px（スマホサイズ）では、ブレイクポイント <code>md:</code> (768px以上) が適用されないため、デフォルトの <code>flex-col</code> が効きます。</p><p>したがって外側のカード3枚は<strong>「縦並び」</strong>になり、各カード内は <code>flex flex-col items-center</code> により要素が<strong>「縦並び・中央揃え」</strong>になります。</p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <footer class="text-center text-xs text-gray-400 pt-6">
+      Tailwind CSS 練習問題 · flex / flex-col
+    </footer>
+
+  </main>
+</body>
+</html>
